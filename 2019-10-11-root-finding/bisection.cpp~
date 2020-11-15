@@ -1,0 +1,33 @@
+#include<iostream>
+#include<cmath>
+using fprt=double(double);
+
+double bisection(double xl, double xu, double eps);
+double fun(double x);
+
+int main(void)
+{
+  const double eps=1.0e-6;
+  double root=bisection(100,200,eps,fun)
+
+  return 0;
+}
+
+double fun(double x)
+{
+  return x+10-x*std::cosh(50.0/x)
+}
+
+double bisection(double xl, double xu, double eps)
+{
+  while(std::abs(xr)<eps){
+    double xr=(xl+xu)/2;
+    if(std::abs(xr)<eps)return xr;
+    if(f(xr)*f(xl)<0){
+      xu=xr;
+    }
+    else{
+      xl=xr;
+    }
+  }
+}

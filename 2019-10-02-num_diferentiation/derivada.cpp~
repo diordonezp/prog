@@ -1,0 +1,14 @@
+#include<iosteam>
+
+double sin(int n);
+
+int main(void)
+{
+  std::cout << sin(5) << std::endl;
+  return 0;
+}
+
+double sin(int n)
+{
+  return std::sin(n);
+}

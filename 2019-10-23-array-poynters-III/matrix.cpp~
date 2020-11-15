@@ -1,0 +1,42 @@
+#include<iostream>
+
+int main(void)
+{
+  //declarar matriz
+  cons int M=5, N=5;
+  int A[M][N]={{0}};
+  int AT[N][M]={{0}};
+  int ii,jj;
+ 
+  for(ii=0; ii<M; ii++){
+    for(jj=0; jj<N;jj++){
+      A[ii][jj]=ii*N+jj;
+    }
+  }
+  
+  std::cout<< "#original matrix: " <<"\n";
+  for(ii=0; ii<M; ii++){
+    for(jj=0; jj<N;jj++){
+      std::cout<< A[ii][jj] << " ";
+    }
+    std::cout<< "\n";
+  }
+  
+  //procesarla
+  for(ii=0; ii<M; ii++){
+    for(jj=0; jj<N;jj++){
+      AT[ii][jj]=A[jj][ii];
+    }
+  }
+  
+  //imprimirla
+  std::cout<< "#original matrix: " <<"\n";
+  for(ii=0; ii<N; ii++){
+    for(jj=0; jj<M;jj++){
+      std::cout<< A[ii][jj] << " ";
+    }
+    std::cout<< "\n";
+  }
+  
+  return 0;
+}

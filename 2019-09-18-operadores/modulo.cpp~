@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int main(void)
+{
+  double a=0;
+  
+  cout << "escriba un numero" << endl;
+  cin >> a;
+  {
+    if(a%3==0)
+      cout << a << " es divisible por 3" << endl;
+    else
+      cout << a << " no es divisible por 3" << endl;
+  }
+  
+  return 0;
+}

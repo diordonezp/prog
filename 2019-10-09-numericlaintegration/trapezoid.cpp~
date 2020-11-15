@@ -1,0 +1,26 @@
+#include<iostream>
+#include<cmath>
+
+double trapecio(double h, double x_0, double n);
+
+int main(void)
+{
+  std::cout << trapecio(10,0,10) << std::endl;
+
+  return 0;
+}
+
+double f(double x)
+{
+  return x;
+}
+
+double trapecio(double h, double x_0, double n)
+{
+  double sum=0;
+  
+  for(int i=1; i<n; i++){
+    sum+=f(x_0+i*h);
+  }
+  return h/2(f(x_0)+f(x_0+h*n)+2*sum);
+}

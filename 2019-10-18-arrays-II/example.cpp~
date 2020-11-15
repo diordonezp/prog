@@ -1,0 +1,10 @@
+#include<iostream>
+
+int main(void)
+{
+  double stack[10]={0};
+
+  std::cout << stack[9] << "\n";
+
+  return 0;
+}

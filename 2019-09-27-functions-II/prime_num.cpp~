@@ -1,0 +1,33 @@
+#include<iostream>
+
+int prime(int m);
+
+int main(void)
+{
+  for(int i=0; i<=100; i++)
+    {
+      if(prime(i)==1)
+	std::cout << i << std::endl;
+    }
+  
+  return 0;
+}
+
+int prime(int m)
+{
+  int flag=1;
+  
+  if(m==1 || m==0)
+    {
+      return 0;
+    }
+  for(int n=2; n<m; n++)
+    {
+      if(m%n==0)
+	{
+	  flag=0;
+	  break;
+	}
+    }
+  return flag;
+}

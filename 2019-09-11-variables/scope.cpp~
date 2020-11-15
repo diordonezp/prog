@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std
+
+int main(void)
+{
+  double x=7.4;
+  {
+    double x=7.4;
+  }
+}
